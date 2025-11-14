@@ -1,0 +1,235 @@
+/* about-styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('images/homepage.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 250vh;
+    color: white;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+  
+}
+
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0.3rem 1rem;
+    border-radius: 0.5rem;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 80px auto 40px auto; /* Top margin for back button, auto for centering */
+    padding: 20px; /* Padding on both sides */
+    text-align: center;
+}
+
+.about-container h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-container p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#flex1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px; /* Padding on both sides */
+}
+
+#flex1 img {
+    width: 30%; /* Three images side by side on larger screens */
+    height: auto;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 8px; /* Optional: add some styling */
+}
+
+.acknowledgement {
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+    padding: 20px; /* Padding on both sides */
+    text-align: center;
+}
+
+.acknowledgement h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.acknowledgement p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Tablet styles (max-width: 768px) */
+@media (max-width: 768px) {
+    .about-container {
+        margin: 70px 10px 40px 10px;
+        padding: 10px 20px; /* Padding on both sides */
+    }
+
+    .about-container h1 {
+        font-size: 2.5em;
+    }
+
+    .about-container p {
+        font-size: 1em;
+    }
+
+    #flex1 {
+        flex-direction: column;
+        margin: 0 10px 40px 10px;
+        padding: 0 20px; /* Padding on both sides */
+    }
+
+    #flex1 img {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .acknowledgement {
+        margin: 0 10px 40px 10px;
+        padding: 10px 20px; /* Padding on both sides */
+    }
+
+    .acknowledgement h1 {
+        font-size: 2.5em;
+    }
+
+    .acknowledgement p {
+        font-size: 1em;
+    }
+
+    .back-button {
+        font-size: 1.8rem;
+        padding: 0.2rem 0.8rem;
+        top: 15px;
+        left: 15px;
+    }
+}
+
+/* Phone styles (max-width: 480px) */
+@media (max-width: 480px) {
+    .about-container {
+        margin: 60px 5px 40px 5px;
+        padding: 5px 20px; /* Padding on both sides */
+    }
+
+    .about-container h1 {
+        font-size: 2em;
+    }
+
+    .about-container p {
+        font-size: 0.9em;
+    }
+
+    #flex1 {
+        flex-direction: column;
+        margin: 0 5px 40px 5px;
+        padding: 0 20px; /* Padding on both sides */
+    }
+
+    #flex1 img {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .acknowledgement {
+        margin: 0 5px 40px 5px;
+        padding: 5px 20px; /* Padding on both sides */
+    }
+
+    .acknowledgement h1 {
+        font-size: 2em;
+    }
+
+    .acknowledgement p {
+        font-size: 0.9em;
+    }
+
+    .back-button {
+        font-size: 1.5rem;
+        padding: 0.2rem 0.6rem;
+        top: 10px;
+        left: 10px;
+    }
+}
+
+/* Very small phone styles (max-width: 300px) */
+@media (max-width: 300px) {
+    .about-container {
+        margin: 50px 2px 40px 2px;
+        padding: 2px 10px; /* Reduced padding on both sides */
+    }
+
+    .about-container h1 {
+        font-size: 1.5em;
+    }
+
+    .about-container p {
+        font-size: 0.8em;
+    }
+
+    #flex1 {
+        flex-direction: column;
+        margin: 0 2px 40px 2px;
+        padding: 0 10px; /* Reduced padding on both sides */
+    }
+
+    #flex1 img {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .acknowledgement {
+        margin: 0 2px 40px 2px;
+        padding: 2px 10px; /* Reduced padding on both sides */
+    }
+
+    .acknowledgement h1 {
+        font-size: 1.5em;
+    }
+
+    .acknowledgement p {
+        font-size: 0.8em;
+    }
+
+    .back-button {
+        font-size: 1.2rem;
+        padding: 0.1rem 0.5rem;
+        top: 5px;
+        left: 5px;
+    }
+}
